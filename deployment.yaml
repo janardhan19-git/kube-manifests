@@ -18,6 +18,8 @@ spec:
         image: 54.242.130.89:8082/backend-app/backend-app:36
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+      - name: nexus-creds
 ---
 apiVersion: v1
 kind: Service
