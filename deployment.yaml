@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend-app
-        image: 54.242.130.89:8082/backend-app/backend-app:36
+        image: 54.242.130.89:8082/backend-app/backend-app:37
         ports:
         - containerPort: 8080
       imagePullSecrets:
