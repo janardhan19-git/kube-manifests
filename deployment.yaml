@@ -17,7 +17,7 @@ spec:
       - name: backend-app
         image: 54.242.130.89:8082/backend-app/backend-app:42
         ports:
-        - containerPort: 9100
+        - containerPort: 8082
       imagePullSecrets:
       - name: nexus-creds
 ---
@@ -30,6 +30,6 @@ spec:
   selector:
     app: backend-app
   ports:
-  - port: 9100
-    targetPort: 9100
+  - port: 8082
+    targetPort: 8082
   type: NodePort
